@@ -53,16 +53,36 @@
   <!-- ════════════════════════════════════
        MAIN SITE (hidden until entry)
   ════════════════════════════════════ -->
-  <div id="main-site" class="hidden">
-
-    <!-- Floating Petals -->
-    <div class="petals-container" id="site-petals"></div>
-
-    <!-- WhatsApp Float -->
-    <a id="whatsapp-float" class="whatsapp-float" href="#" target="_blank" rel="noopener" title="Share on WhatsApp">
+  <!-- WhatsApp Float -->
+    <button id="whatsapp-float" class="whatsapp-float" onclick="openShareModal()" title="Share Invitation">
       <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.47 2.02 7.777L0 32l8.43-2.008A15.94 15.94 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.186 22.527c-.343.965-1.998 1.843-2.737 1.961-.7.113-1.583.16-2.555-.16-.588-.195-1.342-.454-2.304-.889-4.05-1.748-6.695-5.82-6.898-6.09-.198-.271-1.626-2.16-1.626-4.12s1.03-2.926 1.393-3.324c.363-.4.789-.499 1.054-.499.264 0 .528.003.759.014.244.012.571-.093.893.68.343.808 1.166 2.85 1.268 3.059.1.208.165.452.032.726-.131.274-.198.445-.396.685-.199.24-.417.536-.595.72-.198.2-.406.416-.175.816.232.4 1.031 1.7 2.215 2.753 1.52 1.353 2.802 1.771 3.2 1.97.398.2.63.17.861-.1.232-.268.99-1.154 1.254-1.551.264-.396.528-.33.891-.198.364.132 2.313 1.09 2.71 1.288.396.2.66.3.759.465.098.165.098.952-.245 1.914z"/></svg>
-    </a>
+    </button>
 
+    <!-- ── SHARE MODAL ── -->
+    <div id="share-modal" class="share-modal-backdrop" onclick="closeShareModal(event)">
+      <div class="share-modal-box">
+        <button class="share-modal-close" onclick="closeShareModal()">✕</button>
+        <p class="share-modal-eyebrow">Share Invitation</p>
+        <h3 class="share-modal-title">Shital ❤ Sunil</h3>
+
+        <!-- Invitation Card Preview -->
+        <div class="invite-card-preview">
+          <canvas id="invite-canvas"></canvas>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="share-actions">
+          <button class="share-btn wa-btn" onclick="shareOnWhatsApp()">
+            <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.47 2.02 7.777L0 32l8.43-2.008A15.94 15.94 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.186 22.527c-.343.965-1.998 1.843-2.737 1.961-.7.113-1.583.16-2.555-.16-.588-.195-1.342-.454-2.304-.889-4.05-1.748-6.695-5.82-6.898-6.09-.198-.271-1.626-2.16-1.626-4.12s1.03-2.926 1.393-3.324c.363-.4.789-.499 1.054-.499.264 0 .528.003.759.014.244.012.571-.093.893.68.343.808 1.166 2.85 1.268 3.059.1.208.165.452.032.726-.131.274-.198.445-.396.685-.199.24-.417.536-.595.72-.198.2-.406.416-.175.816.232.4 1.031 1.7 2.215 2.753 1.52 1.353 2.802 1.771 3.2 1.97.398.2.63.17.861-.1.232-.268.99-1.154 1.254-1.551.264-.396.528-.33.891-.198.364.132 2.313 1.09 2.71 1.288.396.2.66.3.759.465.098.165.098.952-.245 1.914z"/></svg>
+            Share on WhatsApp
+          </button>
+          <button class="share-btn dl-btn" onclick="downloadCard()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Save Card
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- ── HERO SECTION ── -->
     <section id="hero">
       <div id="particles-hero"></div>
@@ -278,7 +298,7 @@
             <div class="invite-deco">❧</div>
             <h3>Shital &amp; Sunil</h3>
             <p>Request the honour of your presence at their wedding celebration</p>
-            <p class="invite-details">17 March 2026 · Maharashtra, India</p>
+            <p class="invite-details">17 March 2026 ·Rajureshwar Lawns kannad Maharashtra</p>
             <p class="invite-family">— Bargal Family</p>
             <a href="invitation.pdf" download="Shital_Sunil_Wedding_Invitation.pdf" class="gold-btn invite-btn">
               <span>Download Invitation</span>
