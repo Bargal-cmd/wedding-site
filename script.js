@@ -73,7 +73,7 @@ musicToggle.addEventListener('click', () => {
 });
 
 // ─── COUNTDOWN TIMER ──────────────────────
-const WEDDING_DATE = new Date('2025-03-17T00:00:00');
+const WEDDING_DATE = new Date('2026-03-17T00:00:00');
 
 function updateCountdown() {
   const now  = new Date();
