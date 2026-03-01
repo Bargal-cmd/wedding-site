@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shital ❤️ Sunil | Royal Wedding – 17 March 2026</title>
+  <meta name="description" content="You are cordially invited to the royal wedding of Shital and Sunil on 17 March 2026. Join us for a celebration of love, tradition, and grandeur." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shital ❤️ Sunil | Royal Wedding" />
+  <meta property="og:description" content="Join us to celebrate the wedding of Shital & Sunil on 17 March 2026." />
+  <meta property="og:image" content="images/preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <!-- WhatsApp -->
+  <meta property="og:site_name" content="Shital & Sunil Wedding" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       ENTRY SCREEN
+  ════════════════════════════════════ -->
+  <div id="entry-screen">
+    <div class="entry-overlay"></div>
+    <div class="entry-content">
+      <div class="entry-ornament top"></div>
+      <p class="entry-sub">WITH DIVINE BLESSINGS</p>
+      <h1 class="entry-title">Shital <span class="heart">❤</span> Sunil</h1>
+      <p class="entry-tagline">Are Getting Married</p>
+      <p class="entry-date">17 March 2026</p>
+      <button id="enter-btn" class="gold-btn pulse-btn">
+        <span>Enter The Celebration</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <p class="entry-music-note">🎵 Music will begin upon entry</p>
+      <div class="entry-ornament bottom"></div>
+    </div>
+    <!-- Petal overlay on entry -->
+    <div class="petals-container" id="entry-petals"></div>
+  </div>
+
+  <!-- ════════════════════════════════════
+       MAIN SITE (hidden until entry)
+  ════════════════════════════════════ -->
+  <div id="main-site" class="hidden">
+
+    <!-- Floating Petals -->
+    <div class="petals-container" id="site-petals"></div>
+
+    <!-- WhatsApp Float -->
+    <a id="whatsapp-float" class="whatsapp-float" href="#" target="_blank" rel="noopener" title="Share on WhatsApp">
+      <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.47 2.02 7.777L0 32l8.43-2.008A15.94 15.94 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.186 22.527c-.343.965-1.998 1.843-2.737 1.961-.7.113-1.583.16-2.555-.16-.588-.195-1.342-.454-2.304-.889-4.05-1.748-6.695-5.82-6.898-6.09-.198-.271-1.626-2.16-1.626-4.12s1.03-2.926 1.393-3.324c.363-.4.789-.499 1.054-.499.264 0 .528.003.759.014.244.012.571-.093.893.68.343.808 1.166 2.85 1.268 3.059.1.208.165.452.032.726-.131.274-.198.445-.396.685-.199.24-.417.536-.595.72-.198.2-.406.416-.175.816.232.4 1.031 1.7 2.215 2.753 1.52 1.353 2.802 1.771 3.2 1.97.398.2.63.17.861-.1.232-.268.99-1.154 1.254-1.551.264-.396.528-.33.891-.198.364.132 2.313 1.09 2.71 1.288.396.2.66.3.759.465.098.165.098.952-.245 1.914z"/></svg>
+    </a>
+
+    <!-- ── HERO SECTION ── -->
+    <section id="hero">
+      <div id="particles-hero"></div>
+      <div class="hero-video-wrap">
+        <video id="hero-video" autoplay muted loop playsinline poster="images/preview.jpg">
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-blessing" data-aos="fade-down" data-aos-delay="200">॥ शुभ विवाह ॥</p>
+        <h1 class="hero-names" data-aos="zoom-in" data-aos-delay="400">
+          <span class="bride-name">Shital</span>
+          <span class="hero-heart">❤</span>
+          <span class="groom-name">Sunil</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">Together Forever</p>
+        <p class="hero-date" data-aos="fade-up" data-aos-delay="800">
+          <span class="date-label">Wedding Day</span>
+          <span class="date-value">17 March 2026</span>
+        </p>
+        <!-- Countdown -->
+        <div class="countdown-wrap" data-aos="fade-up" data-aos-delay="1000">
+          <div class="countdown-item"><span id="cd-days">00</span><small>Days</small></div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item"><span id="cd-hours">00</span><small>Hours</small></div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item"><span id="cd-mins">00</span><small>Minutes</small></div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item"><span id="cd-secs">00</span><small>Seconds</small></div>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT SECTION ── -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <p class="section-eyebrow">With the blessings of God</p>
+          <h2 class="section-title">The Bargal Family</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card family-card" data-aos="fade-right" data-aos-delay="100">
+            <div class="family-icon">🌸</div>
+            <h3>Bride's Family</h3>
+            <p class="family-name-main">Shital Bargal</p>
+            <ul class="family-list">
+              <li><span class="rel">Father</span><span class="name">Balasaheb Sitaram Bargal</span></li>
+              <li><span class="rel">Mother</span><span class="name">Sunita Balasaheb Bargal</span></li>
+              <li><span class="rel">Grandfather</span><span class="name">Sitaram Satava Bargal</span></li>
+              <li><span class="rel">Brothers</span><span class="name">Pravi Balasaheb Bargal</span></li>
+              <li><span class="rel"></span><span class="name">Rahul Balasaheb Bargal</span></li>
+            </ul>
+          </div>
+
+          <div class="about-center" data-aos="zoom-in" data-aos-delay="200">
+            <div class="mandala-ring">
+              <div class="mandala-inner">
+                <p class="cursive-names">Shital<br/>&amp;<br/>Sunil</p>
+              </div>
+            </div>
+            <p class="about-quote">"Two souls, one journey,<br/>forever entwined."</p>
+          </div>
+
+          <div class="glass-card family-card" data-aos="fade-left" data-aos-delay="100">
+            <div class="family-icon">🌺</div>
+            <h3>Groom's Family</h3>
+            <p class="family-name-main">Sunil</p>
+            <ul class="family-list">
+              <li><span class="rel">Bride</span><span class="name">Shital Bargal</span></li>
+              <li><span class="rel">Wedding</span><span class="name">17 March 2026</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EVENTS TIMELINE ── -->
+    <section id="events" class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <p class="section-eyebrow">Mark Your Calendars</p>
+          <h2 class="section-title">Wedding Celebrations</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="timeline-icon">🌿</div>
+            <div class="glass-card timeline-card">
+              <span class="event-badge">Day 01</span>
+              <h3>Mehndi Ceremony</h3>
+              <p class="event-date">15 March 6 · Evening</p>
+                <p class="event-venue"><span class="venue-icon">📍</span>At Home</p>
+              <p class="event-desc">An evening of intricate henna art, music, and vibrant colours to celebrate the bride's journey.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right" data-aos="fade-left" data-aos-delay="200">
+            <div class="timeline-icon">💛</div>
+            <div class="glass-card timeline-card">
+              <span class="event-badge">Day 02</span>
+              <h3>Haldi Ceremony</h3>
+              <p class="event-date">16 March 2026 · Evening</p>
+                <p class="event-venue"><span class="venue-icon">📍</span>At Home</p>
+              <p class="event-desc">A sacred ritual of turmeric blessings for radiance, joy, and the couple's bright future together.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="timeline-icon">💍</div>
+            <div class="glass-card timeline-card highlight-card">
+              <span class="event-badge main-badge">Main Event</span>
+              <h3>Wedding Ceremony</h3>
+              <p class="event-date">17 March 2026 · Auspicious Muhurat</p>
+              <p class="event-desc">The grand union — sacred vows, the sacred fire, and the beginning of a lifetime together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ── -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <p class="section-eyebrow">Our Moments</p>
+          <h2 class="section-title">Gallery</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="50" onclick="openLightbox('images/gallery1.jpg')">
+            <img src="images/gallery1.jpg" alt="Wedding Gallery 1" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item tall" data-aos="zoom-in" data-aos-delay="100" onclick="openLightbox('images/gallery11.jpg')">
+            <img src="images/gallery11.jpg" alt="Wedding Gallery 2" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150" onclick="openLightbox('images/gallery3.jpg')">
+            <img src="images/gallery3.jpg" alt="Wedding Gallery 3" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item wide" data-aos="zoom-in" data-aos-delay="200" onclick="openLightbox('images/preview.jpg')">
+            <img src="images\IMG20231112191832.jpg" alt="Wedding Preview" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250" onclick="openLightbox('images/gallery1.jpg')">
+            <img src="images/gallery1.jpg" alt="Wedding Gallery" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" onclick="openLightbox('images/gallery3.jpg')">
+            <img src="images/gallery3.jpg" alt="Wedding Gallery" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img id="lightbox-img" src="" alt="Gallery" />
+    </div>
+
+    <!-- ── LOCATION SECTION ── -->
+    <section id="location" class="section section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <p class="section-eyebrow">Find Us</p>
+          <h2 class="section-title">Venue & Location</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="location-wrap" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-card location-card">
+            <div class="location-info">
+              <div class="loc-icon">📍</div>
+              <div>
+                <h3>Wedding Venue</h3>
+                <p>Rajureshwar Lawns Kannad Maharashtra</p>
+                <p class="loc-date">17 March 2026</p>
+
+              </div>
+            </div>
+            <div class="map-container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380.07434633824175!2d75.13394066242667!3d20.241776624698915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdbfbc4288623d5%3A0x90144ef16af9df50!2sRajureshwar%20Lawns!5e0!3m2!1sen!2sin!4v1772399768745!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="gold-btn direction-btn">
+              <span>Get Directions</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIGITAL INVITATION ── -->
+    <section id="invitation" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <p class="section-eyebrow">Formal Invite</p>
+          <h2 class="section-title">Digital Invitation</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="invitation-wrap" data-aos="zoom-in" data-aos-delay="150">
+          <div class="glass-card invite-card">
+            <div class="invite-deco">❧</div>
+            <h3>Shital &amp; Sunil</h3>
+            <p>Request the honour of your presence at their wedding celebration</p>
+            <p class="invite-details">17 March 2026 · Maharashtra, India</p>
+            <p class="invite-family">— Bargal Family</p>
+            <a href="invitation.pdf" download="Shital_Sunil_Wedding_Invitation.pdf" class="gold-btn invite-btn">
+              <span>Download Invitation</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-ornament">❧</div>
+      <p class="footer-names">Shital ❤ Sunil</p>
+      <p class="footer-date">17 March 2026</p>
+      <p class="footer-tagline">Together, forever.</p>
+      <div class="footer-line"></div>
+         <p class="footer-copy">Design By Rahul Bargal</p>
+      <p class="footer-copy">© 2026 Bargal Family · Crafted with Love</p>
+    </footer>
+
+  </div><!-- /main-site -->
+
+  <!-- Audio -->
+  <audio id="bg-music" loop>
+    <source src="assets/music1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Music Toggle -->
+  <button id="music-toggle" class="music-toggle hidden" title="Toggle Music">
+    <span id="music-icon">🎵</span>
+  </button>
+
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
