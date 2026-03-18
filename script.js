@@ -485,7 +485,7 @@ function drawCornerOrnament(ctx, x, y, angle = 0) {
 // ─── WHATSAPP SHARE ────────────────────────
 function shareOnWhatsApp() {
   const url = window.location.href;
-  const msg = `✨ *Wedding Invitation* ✨\n\n💍 *Shital & Sunil* are getting married!\n\n📅 *17 March 2025*\n🌿 Mehndi – 15 March · At Home\n💛 Haldi – 16 March · At Home\n💍 Wedding – 17 March · Maharashtra\n\n🔗 View Invitation: ${url}\n\n— Bargal Family 🙏`;
+  const msg = `✨ *Wedding Invitation* ✨\n\n💍 *Shital & Sunil* are getting married!\n\n📅 *20 March 2025*\n🌿 Mehndi – 19 March · At Home\n💛 Haldi – 20 March · At Home\n💍 Wedding – 20 March · Maharashtra\n\n🔗 View Invitation: ${url}\n\n— Bargal Family 🙏`;
   window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
 }
 window.shareOnWhatsApp = shareOnWhatsApp;
