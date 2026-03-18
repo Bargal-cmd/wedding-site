@@ -74,12 +74,11 @@ musicToggle.addEventListener('click', () => {
 
 // ─── COUNTDOWN TIMER ──────────────────────
 const WEDDING_DATE = new Date('2026-03-20T00:00:00');
-
 function updateCountdown() {
   const now  = new Date();
   const diff = WEDDING_DATE - now;
 
-  // Wedding date is in the past — show "days married" counter
+  // If wedding is over → show "married time"
   if (diff <= 0) {
     const elapsed     = now - WEDDING_DATE;
     const daysPassed  = Math.floor(elapsed / (1000 * 60 * 60 * 24));
@@ -92,16 +91,7 @@ function updateCountdown() {
     document.getElementById('cd-mins').textContent  = String(minsPassed).padStart(2,'0');
     document.getElementById('cd-secs').textContent  = String(secsPassed).padStart(2,'0');
 
-    // Update labels to reflect "days married"
-    const labels = document.querySelectorAll('.countdown-item small');
-    if (labels.length === 4 && labels[0].textContent === 'Days') {
-      labels[0].textContent = 'Days';
-      labels[1].textContent = 'Hours';
-      labels[2].textContent = 'Minutes';
-      labels[3].textContent = 'Seconds';
-    }
-
-    // Show celebration message once
+    // Add "Happily Married" label once
     if (!document.getElementById('cd-married-label')) {
       const wrap = document.querySelector('.countdown-wrap');
       if (wrap) {
@@ -115,7 +105,6 @@ function updateCountdown() {
           color: #E8C96A;
           margin-top: 12px;
           letter-spacing: 1px;
-          text-shadow: 0 0 20px rgba(201,168,76,0.5);
         `;
         msg.textContent = '✦ Happily Married ✦';
         wrap.appendChild(msg);
@@ -124,7 +113,7 @@ function updateCountdown() {
     return;
   }
 
-  // Wedding is upcoming — countdown
+  // Countdown for upcoming wedding (20 March)
   const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -485,7 +474,7 @@ function drawCornerOrnament(ctx, x, y, angle = 0) {
 // ─── WHATSAPP SHARE ────────────────────────
 function shareOnWhatsApp() {
   const url = window.location.href;
-  const msg = `✨ *Wedding Invitation* ✨\n\n💍 *Shital & Sunil* are getting married!\n\n📅 *20 March 2025*\n🌿 Mehndi – 19 March · At Home\n💛 Haldi – 20 March · At Home\n💍 Wedding – 20 March · Maharashtra\n\n🔗 View Invitation: ${url}\n\n— Bargal Family 🙏`;
+  const msg = `✨ *Wedding Invitation* ✨\n\n💍 *Shital & Sunil* are getting married!\n\n📅 *20 March 2025*\n🌿 Mehndi – 19 March · At Home\n💛 Haldi – 20 March ·\n💍 Wedding – 20 March · Maharashtra\n\n🔗 View Invitation: ${url}\n\n— Bargal Family 🙏`;
   window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
 }
 window.shareOnWhatsApp = shareOnWhatsApp;
