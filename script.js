@@ -355,7 +355,7 @@ function drawInviteCard() {
   ctx.textAlign = 'center';
 
   // Mehndi row
-  eventRow(ctx, W/2, 638, '🌿', 'Mehndi Ceremony', '15 March · Evening · At Home');
+  eventRow(ctx, W/2, 638, '🌿', 'Mehndi Ceremony', '19 March · Evening · At Home');
 
   // divider
   ctx.strokeStyle = 'rgba(201,168,76,0.2)';
@@ -363,7 +363,7 @@ function drawInviteCard() {
   ctx.beginPath(); ctx.moveTo(140, 660); ctx.lineTo(W-140, 660); ctx.stroke();
 
   // Haldi row
-  eventRow(ctx, W/2, 702, '💛', 'Haldi Ceremony', '16 March · Morning · At Home');
+  eventRow(ctx, W/2, 702, '💛', 'Haldi Ceremony', '20 March · Morning · At lawns');
 
   ctx.beginPath(); ctx.moveTo(140, 724); ctx.lineTo(W-140, 724); ctx.stroke();
 
@@ -373,10 +373,10 @@ function drawInviteCard() {
   ctx.fillText('💍  Wedding Ceremony', W/2, 760);
   ctx.fillStyle = '#C9A84C';
   ctx.font = '400 14px "Poppins", sans-serif';
-  ctx.fillText('17 March 2025  ·  Auspicious Muhurat', W/2, 784);
+  ctx.fillText('20 March 2025  ·  Auspicious Muhurat', W/2, 784);
   ctx.fillStyle = 'rgba(201,168,76,0.8)';
   ctx.font      = '400 12px "Poppins", sans-serif';
-  ctx.fillText('Maharashtra, India', W/2, 804);
+  ctx.fillText('Rajeshwari Lawns Maharashtra, India', W/2, 804);
 
   // ── Bottom divider ──
   flowerRow(ctx, W/2, 852);
